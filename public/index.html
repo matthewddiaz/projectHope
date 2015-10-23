@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <title>ACM @ UF</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+	</head>
+
+  <body ng-app="projectHope">
+
+    <div id="navigation-bar">
+      <div class="row mosaic-logo-row">
+        <div class="col-xs-12">
+          <p class="logo-size">Mosaic @ UF</p>
+        </div>
+      </div>
+
+      <div class="row mosaic-nav-bar">
+        <div class="col-xs-4 mosaic-nav-link">
+					<a href="#/home">
+						<p>Home</p>
+					</a>
+        </div>
+        <div class="col-xs-4 mosaic-nav-link">
+					<a href="#/home">
+						<p>Events</p>
+					</a>
+        </div>
+        <div class="col-xs-4 mosaic-nav-link">
+					<a href="#/calendar">
+						<p>Calendar</p>
+					</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Bar goes here-->
+
+		<div ng-view class="page-views centering">
+		</div>
+
+    <!-- Footer goes here-->
+
+    <div id="footer">
+      <div class="row footer-links">
+        <div class="col-xs-6 centering full-height">
+					<!-- Modal Trigger -->
+					<div class="col">
+					    <a class='btn' href='#demoModal' modal>Find nearby Church</a>
+					</div>
+					<!-- Modal Structure -->
+					<div id="demoModal" class="modal">
+							<!-- Design your template inside here!-->
+					    <div>
+					        <a href="#!" class="modal-close">X</a>
+					    </div>
+					</div>
+
+
+
+        </div>
+
+        <div class="col-xs-6 centering full-height">
+          <p>Contact US</p>
+        </div>
+      </div>
+
+      <div class="row footer-trade-mark">
+        <div class="col-xs-12">
+          <p>2015 ACM @ UF. All rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+		<script src="js/angular-route.min.js"></script>
+		<script src="js/angular-materialize.js"></script>
+		<script src="/app.js"></script>
+  </body>
+</html>

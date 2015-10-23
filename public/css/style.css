@@ -1,0 +1,71 @@
+body,
+html{
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/*Using flex to vertically and horizontal align elements*/
+.centering{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.full-height{
+  height: 100%;
+}
+
+#navigation-bar .mosaic-logo-row{
+  width: 100%;
+  height: 90px;
+  text-align: center;
+}
+
+#navigation-bar .mosaic-logo-row .logo-size{
+  font-size: 40px;
+}
+
+#navigation-bar .mosaic-nav-bar{
+  width: 70%;
+  margin: auto;
+}
+
+#navigation-bar .mosaic-nav-bar .mosaic-nav-link{
+  text-align: center;
+}
+
+.page-views{
+  -webkit-flex: 1 0 auto;
+  flex: 1 0 auto;
+  margin: auto;
+  width: 100%;
+}
+
+#footer{
+  background-color: #37474f;
+  height: 200px;
+  width: 100%;
+  bottom: 0;
+  color: white;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+}
+
+#footer .footer-links{
+  margin: auto;
+  height: 120px;
+  width: 70%;
+}
+
+#footer .footer-trade-mark{
+  margin: auto;
+  height: 80px;
+  width: 70%;
+  border-top: 1px solid white;
+}
