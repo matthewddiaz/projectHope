@@ -3,59 +3,53 @@
 	<head>
     <title>ACM @ UF</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
     <link rel="stylesheet" href="/css/style.css">
 	</head>
 
   <body ng-app="projectHope">
 
-    <div id="navigation-bar">
-      <div class="row mosaic-logo-row">
-        <div class="col-xs-12">
-          <p class="logo-size">Mosaic @ UF</p>
-        </div>
-      </div>
-
-      <div class="row mosaic-nav-bar">
-        <div class="col-xs-4 mosaic-nav-link">
-					<a class="no-decoration" href="#/home">
-						<p>Home</p>
-					</a>
-        </div>
-        <div class="col-xs-4 mosaic-nav-link">
-					<a class="no-decoration" href="#/home">
-						<p>Events</p>
-					</a>
-        </div>
-        <div class="col-xs-4 mosaic-nav-link">
-					<a class="no-decoration" href="#/calendar">
-						<p>Calendar</p>
-					</a>
-        </div>
-      </div>
+	<!-- Navigation Bar goes here-->
+  <nav id="acm-nav">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">
+				<img src="/images/acmlogo2.jpeg">
+			</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="link-font-color" href="sass.html">Home</a></li>
+        <li><a class="link-font-color" href="badges.html">Community</a></li>
+        <li><a class="link-font-color" href="collapsible.html">Events</a></li>
+        <li><a class="link-font-color" href="mobile.html">Gallery</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="sass.html">Home</a></li>
+        <li><a href="badges.html">Community</a></li>
+        <li><a href="collapsible.html">Events</a></li>
+        <li><a href="mobile.html">Gallery</a></li>
+      </ul>
     </div>
-
-    <!-- Navigation Bar goes here-->
+  </nav>
 
 		<div ng-view class="page-views centering">
 		</div>
 
     <!-- Footer goes here-->
-
     <div id="footer">
-      <div class="row footer-links">
+      <div class="row footer-links-row">
         <div class="col-xs-6 centering full-height">
 
 					<!-- Modal Trigger -->
 					<div class="col">
-					    <a class="no-decoration" href='#demoModal' modal>Find nearby Church</a>
+					    <a class="no-decoration footer-links" href='#findChurches' modal>Find nearby Church</a>
 					</div>
 					<!-- Modal Structure -->
-					<div id="demoModal" class="modal">
+					<div id="findChurches" class="modal">
 							<!-- Design your template inside here!-->
 							<div class="row full-height church-location-row">
-								<div>
-						      <a href="#!" class="modal-close">X</a>
+								<div class="modal-close-button-row">
+						      <a class="modal-close no-decoration modal-x-button" href="#!">X</a>
 						    </div>
 
 								<div class="col-xs-6">
@@ -82,32 +76,22 @@
         <div class="col-xs-6 centering full-height">
 					<!-- Modal Trigger -->
 					<div class="col">
-					    <a class="no-decoration" href='#demoModal' modal>Contact US</a>
+					    <a class="no-decoration footer-links" href='#contactUS' modal>Contact US</a>
 					</div>
 					<!-- Modal Structure -->
-					<div id="demoModal" class="modal">
+					<div id="contactUS" class="modal">
 							<!-- Design your template inside here!-->
-							<div class="row full-height church-location-row">
-								<div>
-						      <a href="#!" class="modal-close">X</a>
+							<div class="row full-height">
+								<div class="modal-close-button-row">
+						      <a class="modal-close no-decoration modal-x-button" href="#!">X</a>
 						    </div>
 
-								<div class="col-xs-6">
-									<p>Gainesville Seventh-day Adventist Church</p>
-									<p>Visit Gainesville SDA's website @
-										<a href="http://www.gvsda.org/">
-												www.gvsda.org
-										</a>
+								<div class="col-xs-12">
+									<p>Hello there! If you would like to know more about Adventist
+										 Campus Minisitry @ UF or just about Seventh Day Adventist beliefs
+										 feel free to send Angelo Grasso an email!
 									</p>
-
-								</div>
-								<div class="col-xs-6">
-									<p>Bethel Seventh Day Adventist</p>
-									<p>Visit Bethel Gainesville SDA's website @
-										<a href="http://bethel45.adventistchurchconnect.org">
-												bethel45.adventistchurchconnect.org
-										</a>
-									</p>
+									<img id="angeloPic" src="images/angeloProfile.jpg">
 								</div>
 							</div>
 					</div>
@@ -116,6 +100,7 @@
 
       <div class="row footer-trade-mark">
         <div class="col-xs-12">
+					<img src="images/acmlogo.png">
           <p>2015 ACM @ UF. All rights Reserved.</p>
         </div>
       </div>

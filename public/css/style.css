@@ -33,23 +33,15 @@ a.no-decoration:active{
   text-decoration: none;
 }
 
-#navigation-bar .mosaic-logo-row{
-  width: 100%;
-  height: 90px;
-  text-align: center;
+#acm-nav{
+  height: 136px;
+  line-height: 136px;
+  background: white;
+  box-shadow: none;
 }
 
-#navigation-bar .mosaic-logo-row .logo-size{
-  font-size: 40px;
-}
-
-#navigation-bar .mosaic-nav-bar{
-  width: 70%;
-  margin: auto;
-}
-
-#navigation-bar .mosaic-nav-bar .mosaic-nav-link{
-  text-align: center;
+nav ul a.link-font-color{
+  color: black;
 }
 
 .page-views{
@@ -59,9 +51,16 @@ a.no-decoration:active{
   width: 100%;
 }
 
+/********************************************
+home.html
+*********************************************/
+
+#acm-slider-style{
+  width: 90%;
+}
+
 #footer{
   background-color: #25282d;
-  height: 200px;
   width: 100%;
   bottom: 0;
   color: #8a8f97;
@@ -69,20 +68,48 @@ a.no-decoration:active{
   flex-shrink: 0;
 }
 
-#footer .footer-links{
+#footer .footer-links-row{
   margin: auto;
   height: 120px;
   width: 70%;
+}
+
+#footer .footer-links-row a.footer-links{
+  color: #8a8f97;
+}
+
+#footer .footer-links-row a.footer-links:hover{
+  color: #bdbdbd;
 }
 
 #footer .footer-trade-mark{
   margin: auto;
   height: 80px;
   width: 70%;
-  border-top: 1px solid white;
+  border-top: 1px solid #8a8f97;
+  text-align: center;
 }
 
 #footer .modal .church-location-row{
   color: black;
   margin: 0px;
+}
+
+#angeloPic{
+  height: 150px;
+  width: 150px;
+  border-radius: 75px;
+}
+
+.modal .modal-close-button-row{
+  text-align: right;
+}
+
+.modal a.modal-x-button{
+  padding-right: 5px;
+  color: black;
+}
+
+.modal a.modal-x-button:hover{
+  color: #8a8f97;
 }
