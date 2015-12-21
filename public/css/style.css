@@ -33,6 +33,13 @@ a.no-decoration:active{
   text-decoration: none;
 }
 
+.page-views{
+  -webkit-flex: 1 0 auto;
+  flex: 1 0 auto;
+  margin: auto;
+  width: 100%;
+}
+
 #acm-nav{
   height: 136px;
   line-height: 136px;
@@ -44,19 +51,23 @@ nav ul a.link-font-color{
   color: black;
 }
 
-.page-views{
-  -webkit-flex: 1 0 auto;
-  flex: 1 0 auto;
-  margin: auto;
-  width: 100%;
-}
-
 /********************************************
 home.html
 *********************************************/
 
 #acm-slider-style{
   width: 90%;
+}
+
+.slider .indicators{
+  bottom: 50px;
+  z-index: 1001;
+}
+
+
+.slider .indicators .indicator-item{
+  height: 8px;
+  width: 8px;
 }
 
 #footer{
