@@ -17,8 +17,20 @@ html{
   justify-content: center;
 }
 
+.centering-text{
+  text-align: center;
+}
+
 .full-height{
   height: 100%;
+}
+
+.full-width{
+  width: 100%;
+}
+
+.responsive-video.video-heigth{
+  height: 450px;
 }
 
 .no-padding{
@@ -51,19 +63,31 @@ nav ul a.link-font-color{
   color: black;
 }
 
+.top{
+  margin-top: 0;
+}
+
+.title{
+  text-align: center;
+
+}
+
 /********************************************
 home.html
 *********************************************/
-
-#acm-slider-style{
+.slider {
   width: 90%;
 }
 
+.slider .slides img.acm-slide-pics{
+  height: 600px;
+}
+
+/* Materialize class*/
 .slider .indicators{
   bottom: 50px;
   z-index: 1001;
 }
-
 
 .slider .indicators .indicator-item{
   height: 8px;

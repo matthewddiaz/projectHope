@@ -7,8 +7,8 @@
 			.when('/home', {
 				templateUrl : 'home.html'
 			})
-      .when('/calendar', {
-				templateUrl : 'calendar.html'
+      .when('/community', {
+				templateUrl : 'community.html'
 			})
 			.otherwise({
 				redirectTo: '/home'
