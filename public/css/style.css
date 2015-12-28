@@ -1,3 +1,7 @@
+/**************************************************************
+ * Universal configuration
+ **************************************************************/
+
 body,
 html{
   display: -webkit-flex;
@@ -21,20 +25,16 @@ html{
   text-align: center;
 }
 
+span{
+  font-size: 40px;
+}
+
 .full-height{
   height: 100%;
 }
 
 .full-width{
   width: 100%;
-}
-
-.responsive-video.video-heigth{
-  height: 450px;
-}
-
-.no-padding{
-  padding: 0px;
 }
 
 a.no-decoration,
@@ -52,6 +52,14 @@ a.no-decoration:active{
   width: 100%;
 }
 
+.no-padding{
+  padding: 0px;
+}
+
+/**************************************************************
+ * index.html
+ **************************************************************/
+
 #acm-nav{
   height: 136px;
   line-height: 136px;
@@ -63,35 +71,8 @@ nav ul a.link-font-color{
   color: black;
 }
 
-.top{
-  margin-top: 0;
-}
-
 .title{
   text-align: center;
-
-}
-
-/********************************************
-home.html
-*********************************************/
-.slider {
-  width: 90%;
-}
-
-.slider .slides img.acm-slide-pics{
-  height: 600px;
-}
-
-/* Materialize class*/
-.slider .indicators{
-  bottom: 50px;
-  z-index: 1001;
-}
-
-.slider .indicators .indicator-item{
-  height: 8px;
-  width: 8px;
 }
 
 #footer{
@@ -147,4 +128,45 @@ home.html
 
 .modal a.modal-x-button:hover{
   color: #8a8f97;
+}
+
+/**************************************************************
+ * home.html
+ **************************************************************/
+
+.slider {
+  width: 90%;
+}
+
+.slider .slides img.acm-slide-pics{
+  height: 600px;
+}
+
+/* Materialize class*/
+.slider .indicators{
+  bottom: 50px;
+  z-index: 1001;
+}
+
+.slider .indicators .indicator-item{
+  height: 8px;
+  width: 8px;
+}
+
+/********************************************
+community.html
+*********************************************/
+
+.comm-description-container{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.comm-description-container .paragraph-style{
+  text-align: left;
+}
+
+.responsive-video.comm-video-height{
+  height: 400px;
+  width: 711px;
 }
