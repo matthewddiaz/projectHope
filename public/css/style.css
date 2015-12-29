@@ -141,23 +141,32 @@ nav ul a.link-font-color{
  * home.html
  **************************************************************/
 
-.slider {
+/*.slider {
   width: 90%;
+}*/
+
+.acm-home-style{
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.slider .slides img.acm-slide-pics{
+.acm-home-style .slider .slides img.acm-slide-pics{
   height: 600px;
 }
 
 /* Materialize class*/
-.slider .indicators{
+.acm-home-style .slider .indicators{
   bottom: 50px;
   z-index: 1001;
 }
 
-.slider .indicators .indicator-item{
+.acm-home-style .slider .indicators .indicator-item{
   height: 8px;
   width: 8px;
+}
+
+.acm-home-style .acm-description-font{
+  font-size: 18px;
 }
 
 /********************************************
