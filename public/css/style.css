@@ -74,6 +74,11 @@ a.no-decoration:active{
   -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
 }
 
+#acm-nav .nav-wrapper.nav-style .button-collapse.acm-side-nav-style{
+  color: #23527c;
+}
+
+
 nav ul a.link-font-color{
   color: black;
 }
@@ -185,4 +190,12 @@ community.html
 .responsive-video.comm-video-height{
   height: 400px;
   width: 711px;
+}
+
+/********************************************
+events.html
+*********************************************/
+
+.acm-events-container{
+  border: 1px solid black;
 }
