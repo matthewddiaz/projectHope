@@ -81,6 +81,7 @@ a.no-decoration:active{
 
 nav ul a.link-font-color{
   color: black;
+  font-size: 1.2em;
 }
 
 .title{
@@ -95,6 +96,21 @@ nav ul a.link-font-color{
   -webkit-flex-shrink: 0;
   flex-shrink: 0;
   text-align: center;
+}
+
+#footer .acm-footer-links{
+  margin-top: 40px;
+  margin-bottom: 0px;
+  font-size: 1.2em;
+}
+
+#footer .acm-footer-logo-col{
+  margin-bottom: 20px;
+}
+
+#footer .last-updated-col{
+  margin-bottom: 10px;
+  font-size: .9em;
 }
 
 /**************************************************************
