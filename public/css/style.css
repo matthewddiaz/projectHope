@@ -104,6 +104,10 @@ nav ul a.link-font-color{
   font-size: 1.2em;
 }
 
+#footer .acm-footer-links .footer-link-styles{
+  color: white;
+}
+
 #footer .acm-footer-logo-col{
   margin-bottom: 20px;
 }
