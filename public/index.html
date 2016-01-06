@@ -4,6 +4,7 @@
     <title>ACM | UF</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
 		<link rel="shortcut icon" href="favicon/favicon.ico">
 	  <link rel="stylesheet" href="/css/style.css">
@@ -38,76 +39,46 @@
 		<div ng-view class="page-views centering">
 		</div>
 
-    <!-- Footer goes here-->
-    <div id="footer">
-      <div class="row footer-links-row">
-        <div class="col-xs-6 centering full-height">
-
-					<!-- Modal Trigger -->
-					<div class="col">
-					    <a class="no-decoration footer-links" href='#findChurches' modal>Find nearby Church</a>
+    <div class="row" id="footer">
+			<div class=col-xs-12>
+				<div class="row">
+					<div class="col-xs-4">
+						<i class="fa fa-home"></i> Find A Church
 					</div>
-					<!-- Modal Structure -->
-					<div id="findChurches" class="modal">
-							<!-- Design your template inside here!-->
-							<div class="row full-height church-location-row">
-								<div class="modal-close-button-row">
-						      <a class="modal-close no-decoration modal-x-button" href="#!">X</a>
-						    </div>
 
-								<div class="col-xs-6">
-									<p>Gainesville Seventh-day Adventist Church</p>
-									<p>Visit Gainesville SDA's website @
-										<a class="no-decoration" href="http://www.gvsda.org/">
-												www.gvsda.org
-										</a>
-									</p>
+					<div class="col-xs-4">
+						<i class="fa fa-envelope-o"></i> Contact US
+					</div>
 
-								</div>
-								<div class="col-xs-6">
-									<p>Bethel Seventh Day Adventist</p>
-									<p>Visit Bethel Gainesville SDA's website @
-										<a class="no-decoration" href="http://bethel45.adventistchurchconnect.org">
-												bethel45.adventistchurchconnect.org
-										</a>
-									</p>
-								</div>
+					<div class="col-xs-4">
+						<div class="row">
+							<div class="col-xs-6">
+								<i class="fa fa-facebook"></i>
 							</div>
-					</div>
-        </div>
 
-        <div class="col-xs-6 centering full-height">
-					<!-- Modal Trigger -->
-					<div class="col">
-					    <a class="no-decoration footer-links" href='#contactUS' modal>Contact US</a>
-					</div>
-					<!-- Modal Structure -->
-					<div id="contactUS" class="modal">
-							<!-- Design your template inside here!-->
-							<div class="row full-height">
-								<div class="modal-close-button-row">
-						      <a class="modal-close no-decoration modal-x-button" href="#!">X</a>
-						    </div>
-
-								<div class="col-xs-12">
-									<p>Hello there! If you would like to know more about Adventist
-										 Campus Minisitry @ UF or just about Seventh Day Adventist beliefs
-										 feel free to send Angelo Grasso an email!
-									</p>
-									<img id="angeloPic" src="images/angeloProfile.jpg">
-								</div>
+							<div class="col-xs-6">
+								<i class="fa fa-instagram"></i>
 							</div>
+						</div>
 					</div>
-        </div>
-      </div>
+				</div>
+			</div>
 
-      <div class="row footer-trade-mark">
-        <div class="col-xs-12">
-					<img src="images/acmlogo.png">
-          <p>2015 ACM @ UF. All rights Reserved.</p>
-        </div>
-      </div>
-    </div>
+			<div class="col-xs-12">
+				<a href="#!" class="brand-logo">
+					<img src="/images/acmlogo.png">
+				</a>
+			</div>
+
+			<div class="col-xs-12">
+				<p>Copyright © 2016 ACM @ UF. All Rights Reserved.</p>
+			</div>
+
+			<div class="col-xs-12">
+				<p>Last Updated: </p>
+			</div>
+
+		</div>
 
 		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>

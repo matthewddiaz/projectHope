@@ -88,58 +88,13 @@ nav ul a.link-font-color{
 }
 
 #footer{
-  background-color: #25282d;
+  background-color: black;
   width: 100%;
-  bottom: 0;
-  color: #8a8f97;
+  margin-bottom: 0;
+  color: white;
   -webkit-flex-shrink: 0;
   flex-shrink: 0;
-}
-
-#footer .footer-links-row{
-  margin: auto;
-  height: 120px;
-  width: 70%;
-}
-
-#footer .footer-links-row a.footer-links{
-  color: #8a8f97;
-}
-
-#footer .footer-links-row a.footer-links:hover{
-  color: #bdbdbd;
-}
-
-#footer .footer-trade-mark{
-  margin: auto;
-  height: 80px;
-  width: 70%;
-  border-top: 1px solid #8a8f97;
   text-align: center;
-}
-
-#footer .modal .church-location-row{
-  color: black;
-  margin: 0px;
-}
-
-#angeloPic{
-  height: 150px;
-  width: 150px;
-  border-radius: 75px;
-}
-
-.modal .modal-close-button-row{
-  text-align: right;
-}
-
-.modal a.modal-x-button{
-  padding-right: 5px;
-  color: black;
-}
-
-.modal a.modal-x-button:hover{
-  color: #8a8f97;
 }
 
 /**************************************************************
