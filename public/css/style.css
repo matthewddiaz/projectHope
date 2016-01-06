@@ -117,13 +117,18 @@ nav ul a.link-font-color{
   font-size: .9em;
 }
 
+/**********************************************
+* Contact US    Modal (in Footer of page)
+**********************************************/
+#acm-contact-modal.modal.acm-modal-style{
+  color: black;
+  width: 50%;
+  max-height: 50%;
+}
+
 /**************************************************************
  * home.html
  **************************************************************/
-
-/*.slider {
-  width: 90%;
-}*/
 
 .acm-home-style{
   padding-left: 5%;
