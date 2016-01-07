@@ -58,23 +58,27 @@ a.no-decoration:active{
  **************************************************************/
 
 #acm-nav{
-  height: 136px;
-  line-height: 136px;
   background: white;
-}
-
-#acm-nav .nav-wrapper.nav-style{
   position: fixed;
   z-index: 9999;
-  background: white;
   width: 100%;
+}
+
+#acm-nav.full-size-nav{
   height: 136px;
+  line-height: 136px;
+  box-shadow: none;
+}
+
+.shrunk-size-nav{
+  height: 80px;
+  line-height: 80px;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
-/*box-shadow: none;*/
   -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
 }
 
-#acm-nav .nav-wrapper.nav-style .button-collapse.acm-side-nav-style{
+
+#acm-nav.full-size-nav .nav-wrapper .button-collapse.acm-side-nav-style{
   color: #23527c;
 }
 
