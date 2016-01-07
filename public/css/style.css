@@ -70,6 +70,22 @@ a.no-decoration:active{
   box-shadow: none;
 }
 
+#acm-nav.full-size-nav .nav-wrapper .acm-website-links{
+  line-height: 100px;
+}
+
+#acm-nav.full-size-nav .nav-wrapper .acm-social-media-links{
+  line-height: 36px;
+}
+
+#acm-nav.full-size-nav .nav-wrapper .acm-social-media-links
+.nav-media-link-styles{
+  color: black;
+  font-size: 1em;
+  line-height: 36px;
+  height: 36px;
+}
+
 .shrunk-size-nav{
   height: 80px;
   line-height: 80px;
@@ -81,7 +97,6 @@ a.no-decoration:active{
 #acm-nav.full-size-nav .nav-wrapper .button-collapse.acm-side-nav-style{
   color: #23527c;
 }
-
 
 nav ul a.link-font-color{
   color: black;
