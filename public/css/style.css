@@ -87,8 +87,8 @@ a.no-decoration:active{
 }
 
 .shrunk-size-nav{
-  height: 80px;
-  line-height: 80px;
+  height: 60px;
+  line-height: 60px;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
 }

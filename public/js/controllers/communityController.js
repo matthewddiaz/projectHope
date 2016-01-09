@@ -1,8 +1,6 @@
 angular.module('projectHope.communityController', ['ngRoute', 'ui.materialize'])
   .controller('CommunityController', ['$http', '$scope', function($http, $scope){
     $scope.acmPrinciples = [
-
-
       {
           "title" : "Experiencing God",
           "description" : "We experience God through a deep personal relationship that can be attained through studying God’s word and prayer. Seeking God with prayer and supplication allows us to be able to taste and see His faithfulness, goodness, and love. Matthew 6:33 says: \"Seek ye first the kingdom of God and his righteousness and all these things will be added unto you.\" Some special times when we experience God are at our monthly campus churches as well as our weekly Mosaic worship services on Friday nights.",
