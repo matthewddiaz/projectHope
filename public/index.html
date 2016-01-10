@@ -13,8 +13,7 @@
   <body ng-app="projectHope">
 
 	<!-- Navigation Bar goes here-->
-
-  <nav id="acm-nav" class="full-size-nav" ng-controller="NavigationController">
+  <nav id="acm-nav" class="full-size-nav">
     <div class="nav-wrapper">
       <a href="#!" class="brand-logo">
 				<img src="/images/acmlogo2.jpeg">
@@ -76,7 +75,6 @@
     </div>
   </nav>
 
-
 		<div ng-view class="page-views centering">
 		</div>
 
@@ -136,10 +134,9 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
 		<script src="js/angular-route.min.js"></script>
 		<script src="js/angular-materialize.js"></script>
-		<script src="/js/navBarService.js"></script>
+			<script src="js/navBarShrink.js"></script>
 		<script src="js/app.js"></script>
 		<script src="js/controllers/communityController.js"></script>
-		<script src="js/controllers/navigationController.js"></script>
 
   </body>
 </html>
