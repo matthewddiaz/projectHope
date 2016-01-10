@@ -30,21 +30,25 @@
        $(document).scroll(function(){
          var scrollDistance = $(this).scrollTop();
          if(scrollDistance > 76){
-           $rootScope.$apply();
-           $rootScope.fullSize = false;
+          //  $rootScope.$apply();
+          //  $rootScope.fullSize = false;
            $('#acm-nav').addClass('shrunk-size-nav');
            $('#acm-nav').removeClass('full-size-nav');
+           $('.acm-social-media-links').addClass('hide-container');
+           $('.left').removeClass('hide-container');
            $('.brand-logo').addClass('center');
          }else{
-           $rootScope.$apply();
-           $rootScope.fullSize = true;
+          //  $rootScope.$apply();
+          //  $rootScope.fullSize = true;
            $('#acm-nav').removeClass('shrunk-size-nav');
+           $('.acm-social-media-links').removeClass('hide-container');
            $('#acm-nav').addClass('full-size-nav');
+           $('.left').addClass('hide-container');
            $('.brand-logo').removeClass('center');
          }
        });
      });
-     this.getData = function() { return $rootScope.fullSize; };
+    //  this.getData = function() { return $rootScope.fullSize; };
    }]);
 
 })();

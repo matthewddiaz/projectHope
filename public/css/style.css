@@ -53,6 +53,10 @@ a.no-decoration:active{
   padding: 0px;
 }
 
+.hide-container{
+  display: none;
+}
+
 /**************************************************************
  * index.html
  **************************************************************/
@@ -101,6 +105,13 @@ a.no-decoration:active{
 nav ul a.link-font-color{
   color: black;
   font-size: 1.2em;
+}
+
+.left .acm-website-links i.social-left-links{
+  color: black;
+  font-size: 1rem;
+  height: 60px;
+  line-height: 60px;
 }
 
 .title{
