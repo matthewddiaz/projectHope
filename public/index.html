@@ -11,7 +11,6 @@
 	</head>
 
   <body ng-app="projectHope">
-
 	<!-- Navigation Bar goes here-->
   <nav id="acm-nav" class="full-size-nav">
     <div class="nav-wrapper">
@@ -89,14 +88,51 @@
 					</div>
 
 					<div class="col-xs-4">
-						<!-- Modal Trigger -->
-						<a href='#acm-contact-modal' class="no-decoration footer-link-styles" modal>
-							<i class="fa fa-envelope-o"></i> Contact US
-						</a>
+						<div>
+						    <a href='#demoModal' class="no-decoration footer-link-styles" modal>
+									<i class="fa fa-envelope-o"></i> Contact US
+								</a>
+						</div>
 						<!-- Modal Structure -->
-						<div id="acm-contact-modal" class="modal acm-modal-style">
-						  <div>
-								<h1>Hello there testing!</h1>
+						<div id="demoModal" class="modal acm-contact-madal-style">
+							<div class="visitor-form">
+								<div class="row acm-modal-user-info-container">
+									<div class="input-field col s6">
+										<input id="first_name" type="text" class="validate" required>
+										<label for="project_nam">Name</label>
+									</div>
+
+									<div class="input-field col s6">
+										<input id="email" type="email" class="validate">
+					 					<label for="email">Email</label>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="input-field col s12 acm-modal-subject-input">
+										<input type="text" class="validate" required>
+										<label for="project_nam">Subject</label>
+									</div>
+								</div>
+
+								<div class="row">
+							    <form class="col s12">
+							      <div class="row">
+							        <div class="col s12 no-padding">
+												<textarea id="project-description-box"
+													placeholder="Message, Questions, or Concerns"
+													ng-model="formProperties.projectDescription"
+													class="validate" required>
+												</textarea>
+							        </div>
+							      </div>
+							    </form>
+							  </div>
+
+								<button type="submit" class="btn btn-default"
+				                ng-click="uploadPic(formProperties.picFile)"
+												ng-disabled="adminForm.$invalid">Submit
+								</button>
 							</div>
 						</div>
 					</div>

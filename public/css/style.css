@@ -97,7 +97,6 @@ a.no-decoration:active{
   -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
 }
 
-
 #acm-nav.full-size-nav .nav-wrapper .button-collapse.acm-side-nav-style{
   color: #23527c;
 }
@@ -105,6 +104,11 @@ a.no-decoration:active{
 nav ul a.link-font-color{
   color: black;
   font-size: 1.2em;
+}
+
+.shrunk-logo-style{
+  height: 60px;
+  vertical-align: bottom;
 }
 
 .left .acm-website-links i.social-left-links{
@@ -184,6 +188,36 @@ nav ul a.link-font-color{
   font-size: 18px;
 }
 
+
+.acm-contact-madal-style{
+  color: black;
+}
+
+.acm-contact-madal-style .acm-modal-user-info-container{
+  margin-bottom: 0px;
+}
+
+
+.acm-contact-madal-style .acm-modal-subject-input{
+  margin-top: 0px;
+}
+
+#project-description-box{
+  height: 10rem;
+  text-decoration: none;
+  border: 1px solid #9e9e9e;
+  color: black;
+  outline: none;
+}
+
+#project-description-box:focus{
+  border: 2px solid #26a69a;
+}
+
+.visitor-form{
+  padding: 0 10% 0 10%;
+}
+
 /********************************************
 community.html
 *********************************************/
@@ -208,4 +242,12 @@ events.html
 
 .acm-events-container{
   border: 1px solid black;
+}
+
+.calendar-style{
+  background: blue;
+}
+
+.title-style{
+  background: grey;
 }
