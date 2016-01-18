@@ -57,6 +57,10 @@ a.no-decoration:active{
   display: none;
 }
 
+.top{
+   align-self: flex-start;
+}
+
 /**************************************************************
  * index.html
  **************************************************************/
@@ -136,6 +140,15 @@ nav ul a.link-font-color{
   margin-top: 40px;
   margin-bottom: 0px;
   font-size: 1.2em;
+}
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #footer .acm-footer-links.larger-footer-link-size {
+      font-size: 2.0em;
+    }
 }
 
 #footer .acm-footer-links .footer-link-styles{
@@ -240,14 +253,31 @@ community.html
 events.html
 *********************************************/
 
+.acm-event-page{
+  margin-bottom: 0px;
+  background-color: #fafafa;
+}
+
 .acm-events-container{
-  border: 1px solid black;
+  background-color: white;
+  width: 96%;
+  margin: 2%;
 }
 
-.calendar-style{
-  background: blue;
+.acm-events-container .title-style{
+  font-size: 20px;
 }
 
-.title-style{
-  background: grey;
+.acm-list-style{
+  list-style-type: none;
+  margin: 0 15% 0 15%;
+  padding: 0px;
+}
+
+.acm-list-style .acm-event-container{
+  border-bottom: 1px solid grey;
+}
+
+.acm-list-style li:last-child .acm-event-container {
+  border-bottom: 0px;
 }

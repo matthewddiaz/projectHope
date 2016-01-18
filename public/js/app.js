@@ -1,6 +1,7 @@
 (function(){
   var app = angular.module('projectHope', ['ngRoute', 'ui.materialize',
-                          'projectHope.communityController']);
+                          'projectHope.communityController',
+                          'projectHope.eventsController']);
 
   app.config(['$routeProvider', function($routeProvider){
 		$routeProvider//Are the specific routes that user types in the browser will inject the specifc html to index.html
