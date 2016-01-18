@@ -1,56 +1,23 @@
-<div class="row full-width">
-  <div class="col-sm-3 acm-events-container">
-      <div class="row">
-        <div class="col-sm-12">
-          <p>Past Events</p>
-
-          <div class="row">
-            <div class="col-xs-12">
-              <div class="row">
-                <div class="col-xs-3 calendar-style">
-                  <p>Calendar</p>
-                </div>
-                <div class="col-xs-9 title-style">
-                  <p>CRAVE TOUR</p>
-                </div>
+<div class="row acm-event-page full-width top" ng-controller="EventsController">
+  <div class="col-sm-12 acm-events-container">
+      <p>Weekly</p>
+      <ol class="acm-list-style">
+        <li ng-repeat="event in acmWeeklyEvents">
+          <a class="no-decoration">
+            <div class="acm-event-container no-padding">
+              <div class="title-style">
+                <p>{{event.day}}</p>
+              </div>
+              <div>
+                <p>{{event.title}} </p>
+              </div>
+              <div>
+                <p>{{event.time}} p.m. | {{event.location}}</p>
               </div>
             </div>
-          </div>
+          </a>
+        </li>
 
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-12">
-        </div>
-      </div>
-  </div>
-
-  <div class="col-sm-5 acm-events-container">
-    <div class="row">
-      <div class="col-sm-12">
-          <p>CRAVE TOUR</p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-12">
-          <p>CRAVE TOUR</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-sm-4 acm-events-container">
-    <div class="row">
-      <div class="col-sm-12">
-          <p>CRAVE TOUR</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-12">
-      </div>
-    </div>
+      </ol>
   </div>
 </div>
