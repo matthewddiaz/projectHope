@@ -142,14 +142,18 @@ nav ul a.link-font-color{
   font-size: 1.2em;
 }
 
-@media only screen
+
+@media only screen and (max-width : 768px) {
+  #footer .acm-footer-links.larger-footer-link-size {
+    font-size: 2.0em;
+  }
+}
+/*@media only screen
   and (min-device-width: 375px)
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2) {
-    #footer .acm-footer-links.larger-footer-link-size {
-      font-size: 2.0em;
-    }
-}
+
+}*/
 
 #footer .acm-footer-links .footer-link-styles{
   color: white;
