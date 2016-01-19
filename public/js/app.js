@@ -21,7 +21,8 @@
 
 
    $('.button-collapse').sideNav({
-      closeOnClick: true // Closes side-nav on <a> clicks
+      closeOnClick: true, // Closes side-nav on <a> clicks
+      menuWidth: 300 // Default is 240
     });
 
 
