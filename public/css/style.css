@@ -53,6 +53,7 @@ a.no-decoration:active{
   padding: 0px;
 }
 
+/*only when greater than  991px*/
 .hide-container{
   display: none;
 }
@@ -98,6 +99,7 @@ a.no-decoration:active{
   font-size: 5rem;
 }
 
+/*only when greater than  991px*/
 .shrunk-size-nav{
   height: 60px;
   line-height: 60px;
@@ -242,7 +244,15 @@ community.html
 
 .comm-description-container .paragraph-style{
   text-align: left;
+  font-size: 15px;
 }
+
+@media only screen and (max-width : 991px) {
+  .comm-description-container .paragraph-style {
+    font-size: 18px;
+  }
+}
+
 
 .responsive-video.comm-video-height{
   height: 400px;
