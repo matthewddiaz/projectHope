@@ -119,44 +119,45 @@
 						<!-- Modal Structure -->
 						<div id="acm-contact-us-modal" class="modal acm-contact-madal-style">
 							<div class="visitor-form">
-								<div class="row acm-modal-user-info-container">
-									<div class="input-field col s6">
-										<input id="first_name" type="text" class="validate" required>
-										<label for="project_nam">Name</label>
+								<form ng-controller="ContactUSModalController" name ="vistorInfoForm"
+									ng-submit="sendEmail()">
+									<div class="row acm-modal-user-info-container">
+										<div class="input-field col s6">
+											<input id="first_name" type="text" class="validate"
+											 ng-model="formProperties.vistorName" required>
+											<label for="project_nam">Name</label>
+										</div>
+
+										<div class="input-field col s6">
+											<input id="email" type="email" class="validate"
+											 ng-model="formProperties.vistorEmail" required>
+						 					<label for="email">Email</label>
+										</div>
 									</div>
 
-									<div class="input-field col s6">
-										<input id="email" type="email" class="validate">
-					 					<label for="email">Email</label>
+									<div class="row">
+										<div class="input-field col s12 acm-modal-subject-input">
+											<input type="text" class="validate"
+											 ng-model="formProperties.subject" required>
+											<label for="project_nam">Subject</label>
+										</div>
 									</div>
-								</div>
 
-								<div class="row">
-									<div class="input-field col s12 acm-modal-subject-input">
-										<input type="text" class="validate" required>
-										<label for="project_nam">Subject</label>
-									</div>
-								</div>
+						      <div class="row">
+						        <div class="col s12 no-padding">
+											<textarea id="project-description-box"
+												placeholder="Message, Questions, or Concerns"
+												class="validate" ng-model="formProperties.message" required>
+											</textarea>
+						        </div>
+						      </div>
 
-								<div class="row">
-							    <form class="col s12">
-							      <div class="row">
-							        <div class="col s12 no-padding">
-												<textarea id="project-description-box"
-													placeholder="Message, Questions, or Concerns"
-													ng-model="formProperties.projectDescription"
-													class="validate" required>
-												</textarea>
-							        </div>
-							      </div>
-							    </form>
-							  </div>
-
-								<button type="submit" class="btn btn-default"
-				                ng-click="uploadPic(formProperties.picFile)"
-												ng-disabled="adminForm.$invalid">
-												<i class="material-icons">send</i>
-								</button>
+									<button type="submit" class="btn btn-default"
+									 ng-disabled="vistorInfoForm.$invalid"
+									 ng-click="sendEmail">
+										<i class="material-icons">send</i>
+									</button>
+								</form>
 							</div>
 						</div>
 					</div>
@@ -205,6 +206,7 @@
 		<script src="js/angular-materialize.js"></script>
 		<script src="js/navBarShrink.js"></script>
 		<script src="js/app.js"></script>
+		<script src="js/controllers/contactUSModalController.js"></script>
 		<script src="js/controllers/communityController.js"></script>
 		<script src="js/controllers/eventsController.js"></script>
 		<script src="js/controllers/navigationController.js"></script>

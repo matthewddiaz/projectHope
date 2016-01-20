@@ -1,5 +1,6 @@
 (function(){
   var app = angular.module('projectHope', ['ngRoute', 'ui.materialize',
+                          'projectHope.contactUSModalController',
                           'projectHope.communityController',
                           'projectHope.eventsController',
                           'projectHope.navigationController']);
