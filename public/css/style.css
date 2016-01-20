@@ -53,7 +53,7 @@ a.no-decoration:active{
   padding: 0px;
 }
 
-/*only when greater than  991px*/
+/*only when greater than  992px*/
 .hide-container{
   display: none;
 }
@@ -99,7 +99,7 @@ a.no-decoration:active{
   font-size: 5rem;
 }
 
-/*only when greater than  991px*/
+/*only when greater than  992px*/
 .shrunk-size-nav{
   height: 60px;
   line-height: 60px;
@@ -111,15 +111,23 @@ a.no-decoration:active{
   color: #285db7;
 }
 
+#acm-nav ul a.link-font-color{
+  color: black;
+  font-size: 1.2em;
+}
+
+#acm-nav ul a.link-font-color.active-page-link{
+  color: #285db7;
+}
+
 #acm-nav .side-nav a.acm-mobile-link-font{
   font-size: 40px;
   height: 90px;
   line-height: 90px;
 }
 
-#acm-nav ul a.link-font-color{
-  color: black;
-  font-size: 1.2em;
+#acm-nav .side-nav a.acm-mobile-link-font.mobile-active-page-link{
+  color: #285db7;
 }
 
 .shrunk-logo-style{
@@ -154,7 +162,7 @@ a.no-decoration:active{
   font-size: 1.2em;
 }
 
-@media only screen and (max-width : 991px) {
+@media only screen and (max-width : 992px) {
   #footer .acm-footer-links.larger-footer-link-size {
     font-size: 2.0em;
   }
@@ -247,12 +255,11 @@ community.html
   font-size: 15px;
 }
 
-@media only screen and (max-width : 991px) {
-  .comm-description-container .paragraph-style {
+@media only screen and (max-width : 992px) {
+  .comm-description-container .paragraph-style.larger-font-size {
     font-size: 18px;
   }
 }
-
 
 .responsive-video.comm-video-height{
   height: 400px;
