@@ -1,23 +1,24 @@
 <div class="row acm-event-page full-width top" ng-controller="EventsController">
+  <div class="weekly-annoucement-container">
+    <p>Weekly</p>
+  </div>
   <div class="col-sm-12 acm-events-container">
-      <p>Weekly</p>
-      <ol class="acm-list-style">
-        <li ng-repeat="event in acmWeeklyEvents">
-          <a class="no-decoration">
-            <div class="acm-event-container">
-              <div class="title-style">
-                <p>{{event.day}}</p>
-              </div>
-              <div>
-                <p>{{event.title}} </p>
-              </div>
-              <div>
-                <p>{{event.time}} p.m. | {{event.location}}</p>
-              </div>
+    <ol class="acm-list-style">
+      <li ng-repeat="event in acmWeeklyEvents">
+        <a class="no-decoration">
+          <div class="acm-event-container">
+            <div class="title-style">
+              <p>{{event.day}}</p>
             </div>
-          </a>
-        </li>
-
-      </ol>
+            <div>
+              <p>{{event.title}} </p>
+            </div>
+            <div>
+              <p>{{event.time}} p.m. | {{event.location}}</p>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ol>
   </div>
 </div>

@@ -285,6 +285,12 @@ events.html
   background-color: #fafafa;
 }
 
+.acm-event-page .weekly-annoucement-container{
+  padding: 64px 32px 40px;
+  font-size: 24px;
+  font-family: "Roboto Mono", Roboto, sans-serif;
+}
+
 .acm-events-container{
   background-color: white;
   width: 96%;
