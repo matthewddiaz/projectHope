@@ -23,13 +23,13 @@ angular.module('projectHope.eventsController', ['ngRoute', 'ui.materialize'])
           "day" : "Thursday",
           "title" : "Bible Study",
           "time" : "7:00",
-          "location" : ""
+          "location" : "Reitz Union Food Court"
       },
       {
           "day" : "Friday",
           "title" : "Mosaic: Worship from Scratch",
           "time" : "7:30",
-          "location" : ""
+          "location" : "New Physic Building"
       }
     ]
 

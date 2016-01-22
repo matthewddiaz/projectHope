@@ -108,7 +108,7 @@ a.no-decoration:active{
 }
 
 #acm-nav.full-size-nav .nav-wrapper .button-collapse.acm-side-nav-style{
-  color: #285db7;
+  color: #2a56c6;
 }
 
 #acm-nav ul a.link-font-color{
@@ -117,7 +117,7 @@ a.no-decoration:active{
 }
 
 #acm-nav ul a.link-font-color.active-page-link{
-  color: #285db7;
+  color: #2a56c6;
 }
 
 #acm-nav .side-nav a.acm-mobile-link-font{
@@ -127,7 +127,7 @@ a.no-decoration:active{
 }
 
 #acm-nav .side-nav a.acm-mobile-link-font.mobile-active-page-link{
-  color: #285db7;
+  color: #2a56c6;
 }
 
 .shrunk-logo-style{
@@ -295,6 +295,10 @@ events.html
   font-size: 20px;
 }
 
+.acm-list-style li:hover .title-style{
+  color: #2a56c6;
+}
+
 .acm-list-style{
   list-style-type: none;
   margin: 0 15% 0 15%;
@@ -303,6 +307,8 @@ events.html
 
 .acm-list-style .acm-event-container{
   border-bottom: 1px solid grey;
+  color: rgba(0,0,0,0.7);
+  padding: 25px 0px 34px 0px;
 }
 
 .acm-list-style li:last-child .acm-event-container {
