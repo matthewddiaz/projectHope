@@ -7,6 +7,9 @@
 
   app.config(['$routeProvider', function($routeProvider){
 		$routeProvider//Are the specific routes that user types in the browser will inject the specifc html to index.html
+      .when('/blog',{
+        templateUrl : 'blog.html'
+      })
       .when('/community', {
         templateUrl : 'community.html'
       })
