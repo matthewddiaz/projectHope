@@ -9,8 +9,8 @@ angular.module('projectHope.eventsController', ['ngRoute', 'ui.materialize'])
       },
       {
           "day" : "Tuesday",
-          "title" : "Bootcamp",
-          "time" : "6:30",
+          "title" : "ACM Fitness",
+          "time" : "6:40",
           "location" : "Stadium (Bull Gator)"
       },
       {

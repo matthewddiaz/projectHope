@@ -255,18 +255,28 @@ a.no-decoration:active{
 community.html
 *********************************************/
 
-.comm-description-container{
-  padding-left: 10%;
-  padding-right: 10%;
+@media only screen and (min-width: 993px){
+  .col.l10.community-content{
+  padding-right: 16.6%;
+  float: right;
+  }
 }
 
-.comm-description-container .paragraph-style{
+.col.l10.community-content .paragraph-style{
   text-align: left;
   font-size: 15px;
 }
 
+.scroll-content{
+  float: right;
+}
+
+.scroll-content .scroll-items{
+  position: fixed;
+}
+
 @media only screen and (max-width : 992px) {
-  .comm-description-container .paragraph-style.larger-font-size {
+  .col.l10.community-content .paragraph-style.larger-font-size {
     font-size: 18px;
   }
 }

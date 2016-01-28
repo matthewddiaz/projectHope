@@ -1,20 +1,35 @@
-<div class="full-height" ng-controller="CommunityController">
-  <div ng-repeat="principle in acmPrinciples"
-       class="row full-width centering-text">
-    <div class ="col-md-12">
-      <h4>{{principle.title}}<h4>
-    </div>
+<div class="full-height row" ng-controller="CommunityController">
+  <div class="col l10 community-content">
+    <div ng-repeat="principle in acmPrinciples"
+         id ="{{principle.id}}"
+         class="row full-width centering-text section scrollspy">
+      <div class ="col-md-12">
+        <h4>{{principle.title}}<h4>
+      </div>
 
-    <div class ="col-md-12 comm-description-container">
-      <p class="paragraph-style larger-font-size">
-        {{principle.description}}
-      </p>
-    </div>
+      <div class ="col-md-12">
+        <p class="paragraph-style larger-font-size">
+          {{principle.description}}
+        </p>
+      </div>
 
-    <div class ="col-md-12">
-      <video class="responsive-video comm-video-height" controls>
-        <source ng-src="{{principle.videoURL}}" type="video/mp4">
-      </video>
+      <div class ="col-md-12">
+        <video class="responsive-video comm-video-height" controls>
+          <source ng-src="{{principle.videoURL}}" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+  <div class="col l2 scroll-content">
+    <div class="row">
+      <div class="col hide-on-small-only m3 l2 scroll-items">
+        <ul class="section table-of-contents">
+          <li><a href="#experiencingGod">Experiencing God</a></li>
+          <li><a href="#sharingLove">Sharing Love</a></li>
+          <li><a href="#conntectingLives">Connecting Lives</a></li>
+          <li><a href="#declaringTruth">Declaring Truth</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

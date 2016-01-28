@@ -13,6 +13,9 @@
       .when('/community', {
         templateUrl : 'community.html'
       })
+      .when('#experiencingGod', {
+        templateUrl : 'community.html'
+      })
       .when('/events', {
         templateUrl : 'events.html'
       })
@@ -24,12 +27,10 @@
 			});
 	}]);
 
-
    $('.button-collapse').sideNav({
       closeOnClick: true, // Closes side-nav on <a> clicks
       menuWidth: 300 // Default is 240
     });
-
 
    shrinkNavBar();
 })();
