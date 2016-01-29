@@ -1,6 +1,6 @@
 angular.module('projectHope.communityController', ['ngRoute', 'ui.materialize'])
   .controller('CommunityController', ['$http', '$scope', '$document', function($http, $scope, $document){
-    
+
     $scope.acmPrinciples = [
       {
           "title" : "Experiencing God",
@@ -31,4 +31,8 @@ angular.module('projectHope.communityController', ['ngRoute', 'ui.materialize'])
     setTimeout(function(){
        $('.scrollspy').scrollSpy();
      }, 100);
+
+
+
+
   }]);

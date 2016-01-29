@@ -12,92 +12,94 @@
 
   <body ng-app="projectHope">
 	<!-- Navigation Bar goes here-->
-  <nav id="acm-nav" class="full-size-nav" ng-controller="NavigationController">
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">
-				<img src="/images/acmlogo2.jpeg">
-			</a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse acm-side-nav-style">
-				<i class="material-icons side-bar-menu">menu</i>
-			</a>
+	<div class="navbar-fixed page-views acm-navbar">
+	  <nav id="acm-nav" class="full-size-nav" ng-controller="NavigationController">
+	    <div class="nav-wrapper">
+	      <a href="#!" class="brand-logo">
+					<img src="/images/acmlogo2.jpeg">
+				</a>
+	      <a href="#" data-activates="mobile-demo" class="button-collapse acm-side-nav-style">
+					<i class="material-icons side-bar-menu">menu</i>
+				</a>
 
-			<ul class="left hide-container">
-				<div class="acm-website-links">
-					<li>
-						<a href="https://www.facebook.com/groups/2201047842/"
-						 class="no-decoration">
-						 	<i class="fa fa-facebook nav-media-link-styles social-left-links"></i>
-					 	</a>
-					</li>
-					<li>
-						<a href="https://www.instagram.com/mosaic.uf/"
+				<ul class="left hide-container">
+					<div class="acm-website-links">
+						<li>
+							<a href="https://www.facebook.com/groups/2201047842/"
 							 class="no-decoration">
-							 <i class="fa fa-instagram nav-media-link-styles social-left-links"></i>
-						</a>
-					</li>
-					<li><a class="link-font-color"></a></li>
-					<li><a class="link-font-color"></a></li>
-				</div>
-      </ul>
+							 	<i class="fa fa-facebook nav-media-link-styles social-left-links"></i>
+						 	</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/mosaic.uf/"
+								 class="no-decoration">
+								 <i class="fa fa-instagram nav-media-link-styles social-left-links"></i>
+							</a>
+						</li>
+						<li><a class="link-font-color"></a></li>
+						<li><a class="link-font-color"></a></li>
+					</div>
+	      </ul>
 
-      <ul class="right hide-on-med-and-down">
-				<div class="acm-website-links">
-		      <li>
-						<a href="#/home" class="link-font-color"
-						   ng-class="{'active-page-link' : isActive('/home')}">Home</a>
-					</li>
-		      <li>
-						<a href="#/community" class="link-font-color"
-							 ng-class="{'active-page-link' : isActive('/community')}">Community</a>
+	      <ul class="right hide-on-med-and-down">
+					<div class="acm-website-links">
+			      <li>
+							<a href="#/home" class="link-font-color"
+							   ng-class="{'active-page-link' : isActive('/home')}">Home</a>
+						</li>
+			      <li>
+							<a href="#/community" class="link-font-color"
+								 ng-class="{'active-page-link' : isActive('/community')}">Community</a>
+						</li>
+		        <li>
+							<a href="#/events" class="link-font-color"
+							   ng-class="{'active-page-link' : isActive('/events')}">Events</a>
+						</li>
+		        <li>
+							<a href="#/blog" class="link-font-color"
+								 ng-class="{'active-page-link' : isActive('/blog')}">Blog</a>
+						</li>
+					</div>
+
+					<div class="acm-social-media-links">
+			      <li>
+							<a href="https://www.facebook.com/groups/2201047842/"
+							 class="no-decoration">
+							 	<i class="fa fa-facebook nav-media-link-styles"></i>
+						 	</a>
+						</li>
+			      <li>
+							<a href="https://www.instagram.com/mosaic.uf/"
+								 class="no-decoration">
+								 <i class="fa fa-instagram nav-media-link-styles"></i>
+							</a>
+						</li>
+		        <li><a class="link-font-color"></a></li>
+		        <li><a class="link-font-color"></a></li>
+					</div>
+	      </ul>
+				<!--Side navigation bar for mobile devices (devices max-width: 992px) -->
+	      <ul class="side-nav" id="mobile-demo">
+	        <li>
+						<a href="#/home" class="acm-mobile-link-font"
+							 ng-class="{'mobile-active-page-link' : isActive('/home')}">Home</a>
 					</li>
 	        <li>
-						<a href="#/events" class="link-font-color"
-						   ng-class="{'active-page-link' : isActive('/events')}">Events</a>
+						<a href="#/community" class="acm-mobile-link-font"
+							 ng-class="{'mobile-active-page-link' : isActive('/community')}">Community</a>
 					</li>
 	        <li>
-						<a href="#/blog" class="link-font-color"
-							 ng-class="{'active-page-link' : isActive('/blog')}">Blog</a>
+						<a href="#/events" class="acm-mobile-link-font"
+							 ng-class="{'mobile-active-page-link' : isActive('/events')}">Events</a>
 					</li>
-				</div>
-
-				<div class="acm-social-media-links">
-		      <li>
-						<a href="https://www.facebook.com/groups/2201047842/"
-						 class="no-decoration">
-						 	<i class="fa fa-facebook nav-media-link-styles"></i>
-					 	</a>
+	        <li>
+						<a href="blog.html" class="acm-mobile-link-font"
+						   ng-class="{'active-page-link' : isActive('/blog')}">Blog</a>
 					</li>
-		      <li>
-						<a href="https://www.instagram.com/mosaic.uf/"
-							 class="no-decoration">
-							 <i class="fa fa-instagram nav-media-link-styles"></i>
-						</a>
-					</li>
-	        <li><a class="link-font-color"></a></li>
-	        <li><a class="link-font-color"></a></li>
-				</div>
-      </ul>
-			<!--Side navigation bar for mobile devices (devices max-width: 992px) -->
-      <ul class="side-nav" id="mobile-demo">
-        <li>
-					<a href="#/home" class="acm-mobile-link-font"
-						 ng-class="{'mobile-active-page-link' : isActive('/home')}">Home</a>
-				</li>
-        <li>
-					<a href="#/community" class="acm-mobile-link-font"
-						 ng-class="{'mobile-active-page-link' : isActive('/community')}">Community</a>
-				</li>
-        <li>
-					<a href="#/events" class="acm-mobile-link-font"
-						 ng-class="{'mobile-active-page-link' : isActive('/events')}">Events</a>
-				</li>
-        <li>
-					<a href="blog.html" class="acm-mobile-link-font"
-					   ng-class="{'active-page-link' : isActive('/blog')}">Blog</a>
-				</li>
-      </ul>
-    </div>
-  </nav>
+	      </ul>
+	    </div>
+	  </nav>
+	</div>
 
 		<div ng-view class="page-views centering">
 		</div>

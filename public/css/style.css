@@ -45,7 +45,6 @@ a.no-decoration:active{
   -webkit-flex: 1 0 auto;
   flex: 1 0 auto;
   margin: auto;
-  margin-top: 136px;
   width: 100%;
 }
 
@@ -65,10 +64,12 @@ a.no-decoration:active{
 /**************************************************************
  * index.html
  **************************************************************/
+.navbar-fixed.acm-navbar{
+  height: 136px;
+}
 
 #acm-nav{
   background: white;
-  position: fixed;
   z-index: 9999;
   width: 100%;
 }
@@ -205,7 +206,6 @@ a.no-decoration:active{
 .acm-contact-madal-style .visitor-form .acm-modal-user-info-container{
   margin-bottom: 0px;
 }
-
 
 .acm-contact-madal-style .visitor-form .acm-modal-subject-input{
   margin-top: 0px;
