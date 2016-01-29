@@ -109,7 +109,7 @@ a.no-decoration:active{
 }
 
 #acm-nav.full-size-nav .nav-wrapper .button-collapse.acm-side-nav-style{
-  color: #2a56c6;
+  color: #0021A5;
 }
 
 #acm-nav ul a.link-font-color{
@@ -118,7 +118,7 @@ a.no-decoration:active{
 }
 
 #acm-nav ul a.link-font-color.active-page-link{
-  color: #2a56c6;
+  color: #0021A5;
 }
 
 #acm-nav .side-nav a.acm-mobile-link-font{
@@ -128,7 +128,7 @@ a.no-decoration:active{
 }
 
 #acm-nav .side-nav a.acm-mobile-link-font.mobile-active-page-link{
-  color: #2a56c6;
+  color: #0021A5;
 }
 
 .shrunk-logo-style{
@@ -239,12 +239,17 @@ a.no-decoration:active{
 /* Materialize class*/
 .acm-home-style .slider .indicators{
   bottom: 50px;
-  z-index: 1001;
+  z-index: 100;
 }
 
 .acm-home-style .slider .indicators .indicator-item{
-  height: 8px;
-  width: 8px;
+  height: 12px;
+  width: 12px;
+  background-color: white;
+}
+
+.acm-home-style .slider .indicators .indicator-item.active{
+  background-color: #FD8F58;
 }
 
 .acm-home-style .acm-description-font{
@@ -312,7 +317,7 @@ events.html
 }
 
 .acm-list-style li:hover .title-style{
-  color: #2a56c6;
+  color: #0021A5;
 }
 
 .acm-list-style{
